@@ -1,0 +1,76 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[a4paper, margin=1in, lmargin=1.2in]{geometry}
+
+\usepackage{fontspec}
+\setmainfont{Roboto-Regular}[
+    Path=fonts/,
+    BoldFont=Roboto-Bold,
+    ItalicFont=Roboto-Italic,
+    BoldItalicFont=Roboto-BoldItalic
+]
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+\setlength\parindent{0pt}
+\setlength\parskip{0pt}
+
+\begin{document}
+
+\textbf{\huge James Chuang}
+
+\vspace{0.6cm}
+
+\begin{tabularx}{13 cm}{@{}Xl}
+    77 Avenue Louis Pasteur & \href{mailto:james_chuang@hms.harvard.edu}{james\_chuang@hms.harvard.edu} \\
+    Room 239                & (617) 432-7557                                                            \\
+    Boston, MA 02215        &                                                                           \\
+    \\
+    \href{https://github.com/james-chuang}{github.com/james-chuang} \\
+    \href{https://james-chuang.github.io}{james-chuang.github.io} \\
+\end{tabularx}
+
+\vspace{0.8cm}
+\textbf{\Large areas of interest}
+\begin{itemize}[topsep=2pt, align=right, leftmargin=*, labelsep=2pt]
+    \item data science, data engineering, data visualization
+    \item statistics, machine learning
+    \item genomics, synthetic biology
+\end{itemize}
+
+\vspace{0.8cm}
+\textbf{\Large education}
+\begin{description}[topsep=2pt, align=right, leftmargin=*, labelsep=0pt]
+    \item [2013-present ] PhD candidate, Biomedical Engineering
+        \begin{itemize}[label={}, topsep=0pt]
+            \item Boston University, Boston, MA
+            \item research advisor: Fred Winston, Department of Genetics, Harvard Medical School
+            \item co-advisor: Ahmad Khalil, Department of Biomedical Engineering, Boston University
+        \end{itemize}
+    \item [2013 ] B.S. Biomedical Engineering
+        \begin{itemize}[label={}, topsep=0pt]
+            \item Johns Hopkins University, Baltimore, MD
+            \item research advisor: Jef D. Boeke, Department of Molecular Biology and Genetics, Johns Hopkins Medical School
+        \end{itemize}
+\end{description}
+
+\vspace{0.8cm}
+\textbf{\Large publications} (*equal contribution)
+\begin{description}[topsep=2pt, align=right, leftmargin=*, labelsep=0pt]
+    \item [in review ] Doris SM*, \textbf{Chuang J}*, Viktorovskaya O, Murawska M, Spatt D, Churchman LS, Winston F (2018). Spt6 is required for the fidelity of promoter selection. \textbf{bioRxiv}, doi:\href{https://doi.org/10.1101/347575}{10.1101/347575}
+    \item [2018 ] \textbf{Chuang J}, Boeke JD, Mitchell LA (2018) Coupling Yeast Golden Gate and VEGAS for Efficient Assembly of the Violacein Pathway in \textit{Saccharomyces cerevisiae}. \textbf{Synthetic Metabolic Pathways}, doi:\href{https://doi.org/10.1007/978-1-4939-7295-1_14}{10.1007/978-1-4939-7295-1\_14}
+    \item [2017 ] Aquino P, Honda B, Suma Jaini, Lyubetskaya A, Hosur K, Chiu JG, Ekladious I, Hu D, Jin L, Sayeg MK, Stettner AI, Wang J, Wong BG, Wong WS, Alexander SL, Ba C, Bensussen SI, Chou K, \textbf{Chuang J}, Gastler DE, Grasso DJ, Greifenberger JS, Guo C, Hawes AK, Israni DV, Jain SR, Kim J, Lei J, Li H, Li D, Li Q, Mancuso CP, Mao N, Masud SF, Meisel CL, Mi J, Nykyforchyn CS, Park M, Peterson HM, Ramirez AK, Reynolds DS, Rim NG, Saffie JC, Su H, Su WR, Su Y, Sun M, Thommes MM, Tu T, Varongchayakul N, Wagner TE, Weinberg BH, Yang R, Yaroslavsky A, Yoon C, Zhao Y, Zollinger AJ, Stringer AM, Foster JW, Wade J, Raman S, Broude N, Wong WW, Galagan JE (2017). Coordinated regulation of acid resistance in \textit{Escherichia coli}. \textbf{BMC Systems Biology}, doi:\href{https://doi.org/10.1186/s12918-016-0376-y}{10.1186/s12918-016-0376-y}
+    \item [2015 ] Mitchell, LA*, \textbf{Chuang J}*, Agmon N, Khunsriraksakul C, Phillips NA, Cai Y, Truong DM, Veerakumar A, Wang Y, Mayorga M, Blomquist P, Sadda P, Trueheart J, Boeke JD (2015). Versatile genetic assembly system (VEGAS) to assemble pathways for expression in \textit{S. cerevisiae}. \textbf{Nucleic Acids Research}, doi:\href{https://doi.org/10.1093/nar/gkv466}{10.1093/nar/gkv466}
+    \item [2015 ] Agmon N, Mitchell LA, Cai Y, Ikushima S, \textbf{Chuang J}, Zheng A, Choi W, Martin JA, Caravelli K, Stracquadanio G, Boeke JD (2015). Yeast Golden Gate (yGG) for the Efficient Assembly of \textit{S. cerevisiae} Transcription Units. \textbf{ACS Synthetic Biology}, doi:\href{https://doi.org/10.1021/sb500372z}{10.1021/sb500372z}
+    \item [2013 ] Mitchell LA, Cai Y, Taylor M, Noronha AM, \textbf{Chuang J}, Dai L, Boeke JD (2013). Multichange isothermal mutagenesis: a new strategy for multiple site-directed mutations in plasmid DNA. \textbf{ACS Synthetic Biology}, doi:\href{https://doi.org/10.1021/sb300131w}{10.1021/sb300131w}
+\end{description}
+
+\vspace{0.8cm}
+\textbf{\Large teaching}
+\begin{description}[topsep=2pt, align=right, leftmargin=*, labelsep=0pt]
+    \item [Spring 2016 ] Teaching Assistant, ENG BE 402: Control Systems in Biomedical Engineering, Prof. Ahmad Khalil
+    \item [Spring 2015 ] Teaching Assistant, ENG BE 492: Biomedical Measurements II, Prof. Andrew C. Jackson
+\end{description}
+
+\end{document}
