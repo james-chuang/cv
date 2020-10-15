@@ -1,5 +1,5 @@
 \documentclass[11pt, a4paper]{article}
-\usepackage[a4paper, margin=1in, lmargin=1.2in]{geometry}
+\usepackage[a4paper, margin=1in, lmargin=1in]{geometry}
 
 \usepackage{fontspec}
 \setmainfont{FreeSans}[
@@ -16,6 +16,7 @@
 \definecolor{purple}{HTML}{440154}
 \usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=purple, breaklinks=true]{hyperref}
 \usepackage{tabularx}
+\usepackage{multicol}
 
 \setlength\parindent{0pt}
 \setlength\parskip{0pt}
@@ -35,37 +36,73 @@
     \href{https://github.com/james-chuang}{github.com/james-chuang} \\
 \end{tabularx}
 
-\vspace{1.5em}
+\vspace{1em}
 \noindent\hrulefill
-\vspace{1.5em}
+\vspace{1em}
 
-\textbf{\Large areas of interest}
-\begin{itemize}[topsep=0em, align=right, leftmargin=!]
-    \item data science, data engineering, data visualization
-    \item statistics, machine learning
-    \item genomics, synthetic biology
-\end{itemize}
+A bioinformatics data scientist with experience analyzing complex datasets to investigate biological questions.
+Created software pipelines to process, visualize, and perform statistical analyses on multiple types of genomic data.
+Familiar with UNIX, the Python and R data science stacks, and cluster computing.
+Skilled at technical writing and communicating complex ideas to collaborators.
 
-\vspace{2em}
+\vspace{1em}
+\textbf{\Large relevant skills}
+
+\setlength{\columnsep}{-1.25cm}
+\begin{multicols}{2}
+    \begin{itemize}[topsep=0pt,itemsep=-3pt]
+        \item genomic data analysis
+        \item Python (NumPy, Pandas, SciPy, etc.)
+        \item R (tidyverse)
+        \item UNIX
+        \item version control (git)
+        \item workflow management (Snakemake)
+        \item distributed computing (Slurm)
+        \item[]
+    \end{itemize}
+\end{multicols}
+
+\vspace{1em}
+\textbf{\Large post-doctoral experience}
+
+\begin{description}[topsep=2pt, align=right, leftmargin=!, labelwidth=\widthof{\textbf{2019}}]
+    \item [2020] Fred Winston lab, Department of Genetics, Harvard Medical School
+        \begin{itemize}[topsep=0pt, align=right, leftmargin=!, font=\normalfont]
+            \item Analyzed datasets including RNA-seq, transcription start site sequencing (TSS-seq), native elongating transcript sequencing (NET-seq), ChIP-seq, and MNase-seq for the following projects:
+                \begin{enumerate}
+                    \item Studying the interaction between Spt6 and Spn1, two histone chaperones involved in transcription elongation.
+                    \item Studying the requirement for Spn1 by depleting it from cells and assaying various aspects of transcription and chromatin state.
+                    \item Studying the role of intragenic transcripts, transcripts which initiate from within gene bodies, during yeast stress responses.
+                \end{enumerate}
+        \end{itemize}
+\end{description}
+
+\vspace{1em}
 \textbf{\Large education}
 \begin{description}[topsep=2pt, align=right, leftmargin=!, labelwidth=\widthof{\textbf{2019}}]
     \item [2019] PhD, Biomedical Engineering, Boston University
-        \begin{description}[topsep=0pt, align=right, leftmargin=!, labelwidth=\widthof{research advisor:}, font=\normalfont]
-            \item [thesis title:] Genomic analyses of transcription elongation factors \\ and intragenic transcription
-            \item [research advisor:] Fred Winston, PhD \\ Professor of Genetics \\ Harvard Medical School
+        \begin{description}[topsep=0pt, align=right, leftmargin=!, labelwidth=\widthof{summary:}, font=\normalfont]
+            % \item [thesis title:] Genomic analyses of transcription elongation factors \\ and intragenic transcription
+            \item [advisor:] Fred Winston, PhD \\ Professor of Genetics \\ Harvard Medical School
+            \item [summary:] Analyzed datasets including TSS-seq, ChIP-nexus (high-resolution ChIP-seq), NET-seq, and MNase-seq for the following projects:
+                \begin{enumerate}
+                    \item Studying the mechanisms of widespread intragenic transcription observed in mutants of Spt6, a histone chaperone and transcription elongation factor.
+                    \item Studying the requirement for Spt5, a critical transcription elongation factor, by depleting it from cells and assaying various aspects of transcription and chromatin state.
+                \end{enumerate}
             % \item [co-advisor:] Ahmad Khalil, PhD \\ Associate Professor of Biomedical Engineering \\ Boston University
         \end{description}
     \item [2013] BSc, Biomedical Engineering, Johns Hopkins University
-        \begin{description}[topsep=0pt, align=right, leftmargin=!, labelwidth=\widthof{research advisor:}, font=\normalfont]
+        \begin{description}[topsep=0pt, align=right, leftmargin=!, labelwidth=\widthof{summary:}, font=\normalfont]
             % \item [research advisor:] Jef D. Boeke, PhD, Dsc \\ Department of Molecular Biology and Genetics \\ Johns Hopkins Medical School
-            \item [research advisor:] Jef D. Boeke, PhD, Dsc \\ Director, Institute for Systems Genetics \\ Professor of Biochemistry and Molecular Pharmacology \\ NYU Langone Health
+            \item [advisor:] Jef D. Boeke, PhD, Dsc \\ Director, Institute for Systems Genetics \\ Professor of Biochemistry and Molecular Pharmacology \\ NYU Langone Health
+            \item [summary:] Contributed to the development of methods for the modular assembly of multi-gene circuits for expression in yeast. Also assembled DNA for SC2.0, a project to design and build a novel eukaryotic genome based on the yeast genome.
         \end{description}
 \end{description}
 
-\vspace{2em}
+\vspace{1em}
 \textbf{\Large publications} (*equal contribution)
 \begin{description}[topsep=2pt, align=right, leftmargin=!, labelwidth=\widthof{\textbf{2018}}]
-    \item [2020] Reim NI*, \textbf{Chuang J}*, Jain D*, Alver BH, Park PJ, Winston F (2020). \textbf{The conserved elongation factor Spn1 is required for normal transcription, histone modifications, and splicing in \textit{Saccharomyces cerevisiae}}. Nucleic Acids Research, \linebreak doi:\href{https://doi.org/10.1093/nar/gkaa745}{10.1093/nar/gkaa745}
+    \item [2020] Reim NI*, \textbf{Chuang J}*, Jain D*, Alver BH, Park PJ, Winston F (2020). \textbf{The conserved elongation factor Spn1 is required for normal transcription, histone modifications, and splicing in \textit{Saccharomyces cerevisiae}}. Nucleic Acids Research, doi:\href{https://doi.org/10.1093/nar/gkaa745}{10.1093/nar/gkaa745}
     \item [2018] Doris SM*, \textbf{Chuang J}*, Viktorovskaya O, Murawska M, Spatt D, Churchman LS, Winston F (2018). \textbf{Spt6 is required for the fidelity of promoter selection}. Molecular Cell, doi:\href{https://doi.org/10.1016/j.molcel.2018.09.005}{10.1016/j.molcel.2018.09.005}
     \item [2018] \textbf{Chuang J}, Boeke JD, Mitchell LA (2018) \textbf{Coupling yeast golden gate and VEGAS for efficient assembly of the violacein pathway in \textit{Saccharomyces cerevisiae}}. Synthetic Metabolic Pathways, doi:\href{https://doi.org/10.1007/978-1-4939-7295-1_14}{10.1007/978-1-4939-7295-1\_14}
     \item [2017] Aquino P, Honda B, Jaini S, Lyubetskaya A, Hosur K, Chiu JG, Ekladious I, Hu D, Jin L, Sayeg MK, Stettner AI, Wang J, Wong BG, Wong WS, Alexander SL, Ba C, Bensussen SI, Chou K, \textbf{Chuang J}, Gastler DE, Grasso DJ, Greifenberger JS, Guo C, Hawes AK, Israni DV, Jain SR, Kim J, Lei J, Li H, Li D, Li Q, Mancuso CP, Mao N, Masud SF, Meisel CL, Mi J, Nykyforchyn CS, Park M, Peterson HM, Ramirez AK, Reynolds DS, Rim NG, Saffie JC, Su H, Su WR, Su Y, Sun M, Thommes MM, Tu T, Varongchayakul N, Wagner TE, Weinberg BH, Yang R, Yaroslavsky A, Yoon C, Zhao Y, Zollinger AJ, Stringer AM, Foster JW, Wade J, Raman S, Broude N, Wong WW, Galagan JE (2017). \textbf{Coordinated regulation of acid resistance in \textit{Escherichia coli}}. BMC Systems Biology, doi:\href{https://doi.org/10.1186/s12918-016-0376-y}{10.1186/s12918-016-0376-y}
@@ -74,11 +111,11 @@
     \item [2013] Mitchell LA, Cai Y, Taylor M, Noronha AM, \textbf{Chuang J}, Dai L, Boeke JD (2013). \textbf{Multichange isothermal mutagenesis: a new strategy for multiple site-directed mutations in plasmid DNA}. ACS Synthetic Biology, doi:\href{https://doi.org/10.1021/sb300131w}{10.1021/sb300131w}
 \end{description}
 
-\vspace{0.8cm}
-\textbf{\Large teaching}
-\begin{description}[topsep=2pt, align=right, leftmargin=!, labelwidth=\widthof{\textbf{2016}}]
-    \item [2016] Teaching assistant, Control systems in biomedical engineering \\ Prof. Ahmad S. Khalil \\ ENG BE 402
-    \item [2015] Teaching assistant, Biomedical measurements II \\ Prof. Andrew C. Jackson \\ ENG BE 492
-\end{description}
+% \vspace{0.8cm}
+% \textbf{\Large teaching}
+% \begin{description}[topsep=2pt, align=right, leftmargin=!, labelwidth=\widthof{\textbf{2016}}]
+%     \item [2016] Teaching assistant, Control systems in biomedical engineering \\ Prof. Ahmad S. Khalil \\ ENG BE 402
+%     \item [2015] Teaching assistant, Biomedical measurements II \\ Prof. Andrew C. Jackson \\ ENG BE 492
+% \end{description}
 
 \end{document}
